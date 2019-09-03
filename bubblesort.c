@@ -15,7 +15,7 @@ void bubble_sort(int *a)
     int i = 0;
     int j = 0;
     for (i = 0; i < MAX_ARRAY; i++) {
-	for(j = 0; j < MAX_ARRAY - 1; j++) {
+	for(j = 0; j < MAX_ARRAY - 1- i; j++) {
 	    if(a[j] > a[j+1]) {
 		swap(&a[j], &a[j+1]);
 	    }
@@ -38,4 +38,5 @@ int main()
 	printf("%d\t",a[i]);
     }
     printf("\n");
+	return 0;
 }
