@@ -10,11 +10,13 @@ void insertion_sort(int *a)
 {
     int i = 0;
     int j = 0;
+    int key = 0;
     
     for (i = 1; i < MAX_ARRAY; i++) {
-	for(j = i; j > 0; j--) {
-	    if (a[j] < a[j-1])
-		swap(&a[j], &a[j-1]);
+	key = a[i];
+	for(j = i-1; j >= 0 && (a[j] > key); j--) {
+	    a[j + 1] = a[j];
+	    a[j] = key;
 	}
     }
 }
