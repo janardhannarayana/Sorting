@@ -1,3 +1,16 @@
+/*
+ * Take the element from the unsorted array and search the right spot
+ * in sorted array and insert.
+ * Ex: initially complete array is unsorted.
+ *     Lets assume the first element as sorted and remiaining as unsorted.
+ *     For the first iteration take the second element(which is from unsorted array)
+ *     and compare with first element (sorted array) and insert.
+ *     Now element 1 and 2 are sorted array and remaining elements are unsorted array
+ *     For the second iteration take the first element from unsorted array and compare
+ *     with elements from sorted array (1 & 2 in this case) and insert appropriately.
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
